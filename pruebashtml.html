@@ -2,16 +2,139 @@
 
 <head>
 <style>
+
+#XXX {
+line-height2;
+color:Green;
+}
+
 #pruebasid {
   background-color: lightblue;
   color: black;
   padding: 40px;
   text-align: center;
 }
+
+#cabecera {
+ background: #FFFBB9;
+ border: 1px solid #999999;
+ padding: 20px;
+} 
+
+#menu {
+ background: #CCCCCC;
+ padding: 5px 15px;
+}
+#menu li {
+ display: inline-block;
+ list-style: none;
+ padding: 5px;
+ font: bold 14px verdana, sans-serif;
+}
+
+@charset "utf-8";
+html{
+height:100%;
+}
+main{
+width: 80%;
+height: auto;
+margin:0 auto;
+background: aliceblue;
+}
+.lateral{
+box-sizing: border-box;
+width: max(8%, 200px);
+display: inline-block;
+position: fixed; padding-top: 30px
+}
+.principal{
+margin-left: max(10%, 200px);
+padding: 0 10px;
+height: 100%;
+text-align: justify;
+background:white;
+}
+/*Hasta aquí ya tenemos un menu lateral fijo,
+ahora viene ponerlo bonito*/
+.lateral header{
+font-weight: bold;
+font-size: 1.5rem;
+text-align: center;
+border-bottom: 1px solid black;
+background: aqua
+}
+.lateral ul{
+list-style:none;
+padding-left:0;
+margin-top:0;
+}
+.lateral ul li{
+display:block;
+position: relative;
+padding: 8px 10px;
+margin-left:0;
+border-bottom:1px solid #060696
+}
+.lateral ul li a{
+color: black;
+text-decoration:none;
+}
+.lateral ul li a:after{
+content: ' ';
+position:absolute;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+}
+.lateral ul li:hover, .lateral ul li:hover a{
+background: blue;
+color: white;
+}
 </style>
 </head>
 
+
 <body>
+
+<div class="lateral">
+<header>Indice</header>
+<ul class="menuVert">
+<li><a href="#">item 1</a></li>
+<li><a href="#">item 2</a></li>
+<li><a href="#">item 3</a></li>
+<li><a href="/">item 4</a></li>
+</ul>
+</div>
+<div class="principal">
+Aquí está el contenido de este bloque
+Rellena con suficiente espadio para que supere
+la altura de la pantalla y aparezca el scroll
+</div>
+
+PRUEBAS CLASES.
+
+<p id="xxx">contenido1</p>
+<p id="xxx">contenido2</p>
+
+
+
+
+
+
+<p id="cabecera" header>
+TEST CABECERA
+</header>
+
+<p id="menu" nav>
+<a href="https://www.google.com/">Google</a>
+<a href="https://duckduckgo.com/">Duckduckgo</a>
+<a href="https://www.baidu.com/">Baidu</a>
+<a href="https://www.bing.com/">Bing</a>
+
+</nav>
+
 <p id="pruebasid"> PRUEBA TIME</p>
 <script>
     alert ("PRUEBA ALERT");  
@@ -37,6 +160,11 @@ Sirve para referenciar links de diferentes maneras.
 print"hola"
 print"adios <br>";
 ?>
+
+<header>
+TEST HEADER
+</header>
+
 
 <p>PRUEBAS FORMULARIOS<P>
 
@@ -79,6 +207,12 @@ print"adios <br>";
 <aside>sadjhajdhad</aside>
 <aside>sadjhajdhad</aside>
 
+<footer>
+PIE DE PERRO
+</footer>
+<article>
+ARTICULO
+</article>
 
 </body>
 
