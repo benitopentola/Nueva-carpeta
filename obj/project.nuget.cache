@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3mtKB3+PzKAtjaagKJFUZ5dMM8bqjtluMOXRT6XsgE64PBHEj6Uye9G5BeknN/zCnXkcdmPyQHX0Y+hQiGLCWg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\javie\\Downloads\\Proyecto\\Proyecto.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\javie\\.nuget\\packages\\fsharp.core\\7.0.200\\fsharp.core.7.0.200.nupkg.sha512"
+  ],
+  "logs": []
+}
